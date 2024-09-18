@@ -50,8 +50,7 @@ end
 function Set:addAll(list)
     if type(list) == 'table' then
         for _, value in ipairs(list) do
-            self.items[value] = true
-            self.size = self.size + 1
+            self:add(value);
         end
     end
 end

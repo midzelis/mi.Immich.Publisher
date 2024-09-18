@@ -15,7 +15,7 @@
 -- If not, see <https://www.gnu.org/licenses/>.
 
 function handle(properties, key, newValue)
-    prefs[key]=newValue
+    prefs[key] = newValue
 end
 
 local function sectionsForTopOfDialog(f, props)
@@ -26,7 +26,7 @@ local function sectionsForTopOfDialog(f, props)
     props:addObserver('verbose', handle);
 
     local section = {
-        bind_to_object= props,
+        bind_to_object = props,
         title = "Immich Options",
         f:row {
             f:static_text {
@@ -53,7 +53,7 @@ local function sectionsForTopOfDialog(f, props)
                 width = 20,
             },
             f:checkbox {
-                enabled = bind( {key= 'debug'}),
+                enabled = bind({ key = 'debug' }),
                 margin_left = 5,
                 title = 'Verbose',
                 spacing = 10,

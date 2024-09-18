@@ -13,6 +13,7 @@
 --
 -- You should have received a copy of the GNU General Public License along with Foobar.
 -- If not, see <https://www.gnu.org/licenses/>.
+--
 
 local function map(array, callback)
     local new_array = {}
